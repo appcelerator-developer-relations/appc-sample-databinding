@@ -1,13 +1,23 @@
 $.fruit.set($.args.model);
+var updateTimeout;
+
 
 // when internal model changes, change the global one too
 $.fruit.on('change', handleFruitChange);
 function handleFruitChange() {
-  // @TODO: don't call for every change
-  $.args.model.set($.fruit);
+  clearTimeout(updateTimeout);
+
+  function update() {
+    console.warn('updating');
+    $.args.model.set($.fruit);
+    
+    // Sort collection after changing a property
+    Alloy.Collections.Fruit.sort();
+  }
   
-  // Sort collection after changing a property
-  Alloy.Collections.Fruit.sort();
+  // prevent a lot of changes from re-sorting/re-rendering in a short time
+  updateTimeout = setTimeout(update, 750);
+  
 }
 
 function handleClose() {
