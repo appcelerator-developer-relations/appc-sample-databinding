@@ -1,0 +1,47 @@
+<Alloy>
+  <Collection src="Fruit" />
+  <NavigationWindow module="xp.ui" id="navWin">
+    <Window class="windowStyling">
+      <View id="filterWrapper">
+        <Button id="filterButton" onClick="showFilterDialog" />
+        <Button id="sortButton" onClick="showSortDialog" />
+      </View>
+      <ListView defaultItemTemplate="fruit" onItemclick="handleClickItem" id="fruitLV">
+        <Templates>
+          <ItemTemplate name="fruit">
+            <View id="fruitTemplateWrapper">
+              <Label id="name" bindId="name" />
+              <Label id="amount" bindId="amount" />
+              <View id="color" bindId="color" />
+            </View>
+          </ItemTemplate>
+        </Templates>
+        <ListSection dataCollection="Fruit" dataTransform="transformFruit" dataFilter="filterFruit" dataFunction="rerenderList">
+          <ListItem
+            name:text="{name}"
+            amount:text="{amount}"
+            color:backgroundColor="{color}"
+            accessoryType="{accessoryType}"
+            itemId="{itemId}"
+          />
+        </ListSection>
+      </ListView>
+    </Window>
+  </NavigationWindow>
+  
+  <OptionDialog id="sortDialog" onClick="handleSortDialog">
+    <Options>
+      <Option>Name</Option>
+      <Option>Amount</Option>
+    </Options>
+  </OptionDialog>
+
+  <OptionDialog id="filterDialog" onClick="filterSortDialog">
+    <Options>
+      <Option>All</Option>
+      <Option>Fruit</Option>
+      <Option>Vegetables</Option>
+    </Options>
+  </OptionDialog>
+    
+</Alloy>

@@ -1,0 +1,64 @@
+'Window': {
+  backgroundColor: '#ffffff'
+}
+
+'#nameWrapper': {
+  height: 40,
+  width: Ti.UI.FILL,
+  layout: 'horizontal',
+  top: 20,
+  left: 20,
+  right: 20
+}
+
+'#dataWrapper': {
+  layout: 'vertical'
+}
+
+'#nameLabel': {
+  width: Ti.UI.SIZE,
+  text: 'Name',
+  font: {
+    fontSize: 20,
+    fontWeight: 'bold'
+  }
+}
+
+'#nameTextField': {
+  left: 20,
+  width: Ti.UI.FILL,
+  borderColor: "#ccc",
+  borderWidth: 0.5,
+  borderRadius: 3,
+  height: 40,
+  padding: {
+    left: 10,
+    right: 10
+  }
+}
+
+'#amountWrapper': {
+  layout: 'horizontal',
+  width: Ti.UI.SIZE,
+  height: 50,
+  top: 30
+}
+
+'.amountButton': {
+  font: {
+    fontSize: 30
+  },
+  height: 40,
+  width: 40,
+  backgroundColor: '#eee',
+  borderRadius: 4
+}
+
+'#amountLabel': {
+  font: {
+    fontSize: 24
+  },
+  width: Ti.UI.SIZE,
+  left: 20,
+  right: 20
+}

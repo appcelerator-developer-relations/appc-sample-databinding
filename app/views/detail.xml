@@ -1,0 +1,18 @@
+<Alloy>
+  <Model src="Fruit" instance="true" id="fruit" />
+	<Window title="{$.fruit.name}" onClose="handleClose" class="windowStyling">
+	  <ScrollView id="dataWrapper">
+	    <View id="nameWrapper">
+      	  <Label id="nameLabel" />
+      	  <TextField value="{$.fruit.name}" id="nameTextField" onChange="handleNameChange"></TextField>
+	    </View>
+	    
+	    <View id="amountWrapper">
+        <Button class="amountButton" title="-" manipulator="-1" onClick="alterAmount" />
+	      <Label id="amountLabel" text="{$.fruit.amount}" />
+	      <Button class="amountButton" title="+" manipulator="1" onClick="alterAmount" />
+	    </View>
+	    
+	  </ScrollView>
+	</Window>
+</Alloy>

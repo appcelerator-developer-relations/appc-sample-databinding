@@ -1,0 +1,12 @@
+'.windowStyling[platform=ios]': {
+  barColor: '#3E7A42',
+  titleAttributes: {
+    color: '#ffffff',
+    font: {
+      fontSize: 18,
+      fontWeight: 'bold'
+    }
+  },
+  navTintColor: "#fff",
+  backButtonTitle: ''
+}
