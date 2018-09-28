@@ -1,0 +1,33 @@
+{
+  "name": "appc-sample-databinding",
+  "version": "1.0.0",
+  "description": "This app demonstrates Alloy Data Binding",
+  "main": "app/index.js",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-axway": "^2.0.14",
+    "eslint-plugin-alloy": "^1.0.0"
+  },
+  "scripts": {
+    "lint": "eslint app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcelerator-developer-relations/appc-sample-databinding.git"
+  },
+  "keywords": [
+    "appcelerator",
+    "alloy",
+    "titanium",
+    "sample-app"
+  ],
+  "author": "Rene Pot",
+  "license": "SEE LICENSE IN \"LICENSE\"",
+  "bugs": {
+    "url": "https://github.com/appcelerator-developer-relations/appc-sample-databinding/issues"
+  },
+  "homepage": "https://github.com/appcelerator-developer-relations/appc-sample-databinding#readme"
+}
