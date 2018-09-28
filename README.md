@@ -10,7 +10,7 @@ In detail you can see how the model is updated (you can alter name and amount th
 
 ## Support
 
-If you have any questions about implementation, make sure to reach out to the [Titanium Slack community](http://tislack.org) for questions. Contact me (Wraldpyk) on Slack if you need to know any specifics, but I recommend using the `#helpme` channel to ask questions as there are many people who can help you out.
+If you have any questions about implementation, make sure to reach out to the [Titanium Slack community](https://tislack.org) for questions. Contact me (Wraldpyk) on Slack if you need to know any specifics, but I recommend using the `#helpme` channel to ask questions as there are many people who can help you out.
 
 ## More examples
 I'm happy to add more data-binding examples to this repository. If you are looking for a specifc data-binding example raise a ticket in this repository and I (or someone else) can add it. Do you have an example you want to add here? Feel free to submit a PR.  
