@@ -2,6 +2,10 @@
   backgroundColor: '#ffffff'
 }
 
+'Label': {
+  color: '#333'
+}
+
 '#nameWrapper': {
   height: 40,
   width: Ti.UI.FILL,
@@ -34,7 +38,8 @@
   padding: {
     left: 10,
     right: 10
-  }
+  },
+  color: "#333"
 }
 
 '#amountWrapper': {
