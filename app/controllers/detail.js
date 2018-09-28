@@ -7,7 +7,6 @@ function handleFruitChange() {
 	clearTimeout(updateTimeout);
 
 	function update() {
-		console.warn('updating');
 		$.args.model.set($.fruit);
 
 		// Sort collection after changing a property
