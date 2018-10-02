@@ -1,23 +1,21 @@
 <Alloy>
   <!-- Making an instance model to be used just here. If it weren't an instance it would be a global model-->
   <Model src="Fruit" instance="true" id="fruit" />
-  
+
   <!-- Binding the name attribute of the fruit model here. It is referencing the model in the line above
        If it wouldn't have been an instance you cannot use the id property, you'd need to target the global
        model with the same name as the scr property ({Fruit.name}) -->
   <Window title="{$.fruit.name}" onClose="handleClose" class="windowStyling">
-    <ScrollView id="dataWrapper">
-      <View id="nameWrapper">
-        <Label id="nameLabel" />
-        <TextField value="{$.fruit.name}" id="nameTextField" onChange="handleNameChange"></TextField>
-      </View>
-      <View id="amountWrapper">
-        <!-- Manipulator is a custom property we're using so we don't need multiple onClick callbacks. Check 
-             detail.js how it is used. -->
-        <Button class="amountButton" title="-" manipulator="-1" onClick="alterAmount" />
-        <Label id="amountLabel" text="{$.fruit.amount}" />
-        <Button class="amountButton" title="+" manipulator="1" onClick="alterAmount" />
-      </View>
-    </ScrollView>
+    <View id="nameWrapper">
+      <Label id="nameLabel" />
+      <TextField value="{$.fruit.name}" id="nameTextField" onChange="handleNameChange"></TextField>
+    </View>
+    <View id="amountWrapper">
+    <!-- Manipulator is a custom property we're using so we don't need multiple onClick callbacks. Check
+      detail.js how it is used. -->
+      <Button class="amountButton" title="-" manipulator="-1" onClick="alterAmount" />
+      <Label id="amountLabel" text="{$.fruit.amount}" />
+      <Button class="amountButton" title="+" manipulator="1" onClick="alterAmount" />
+    </View>
   </Window>
 </Alloy>

@@ -1,6 +1,9 @@
 'Window': {
   backgroundColor: '#ffffff'
 }
+".windowStyling": {
+  layout:'vertical'
+}
 
 'Label': {
   color: '#333'
@@ -13,10 +16,6 @@
   top: 20,
   left: 20,
   right: 20
-}
-
-'#dataWrapper': {
-  layout: 'vertical'
 }
 
 '#nameLabel': {
