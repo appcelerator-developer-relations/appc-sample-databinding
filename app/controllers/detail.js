@@ -1,4 +1,4 @@
-$.fruit.set($.args.model);
+$.fruit.set($.args.model.toJSON());
 var updateTimeout;
 
 // when internal model changes, change the global one too
@@ -7,7 +7,7 @@ function handleFruitChange() {
 	clearTimeout(updateTimeout);
 
 	function update() {
-		$.args.model.set($.fruit);
+		$.args.model.set($.fruit.toJSON());
 
 		// Sort collection after changing a property
 		Alloy.Collections.Fruit.sort();
