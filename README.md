@@ -4,9 +4,9 @@ This sample app demonstrates Alloy data binding on a couple of areas. First off 
 
 The entire app can be discussed here, but instead I recommend to dive into the code of the application and see how things are implemented. 
 
-There are 2 controllers in this app, the default `index.js` and the added `detail.js`. Index contains the `ListView` with all the data, and detail contains the details of an item you click on in the ListView. 
+There are 2 controllers in this app, the default `index.js` and the added `detail.js`. Index contains the `ListView` with all the data and `detail.js` contains the details of an item you click on in the ListView. 
 
-In detail you can see how the model is updated (you can alter name and amount there) and how the data of the model in `detail` is bound (check `detail.xml`).
+In the detail controller you can see how the model is updated (you can alter name and amount there) and how the data of the model in `detail` is bound (check `detail.xml`).
 
 ## Support
 
